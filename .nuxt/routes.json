@@ -1,0 +1,59 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/404.vue",
+    "chunkName": "pages/404",
+    "url": "/404",
+    "_name": "_39113bae"
+  },
+  {
+    "name": "draft",
+    "path": "/draft",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/draft/index.vue",
+    "chunkName": "pages/draft/index",
+    "url": "/draft",
+    "_name": "_2f4ee95a"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/search/index.vue",
+    "chunkName": "pages/search/index",
+    "url": "/search",
+    "_name": "_98a88eb6"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_5d66bec8"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/_slug/index.vue",
+    "chunkName": "pages/_slug/index",
+    "_name": "_73508403"
+  },
+  {
+    "path": "/page/:id",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/index.vue",
+    "name": "pages",
+    "_name": "_5d66bec8"
+  },
+  {
+    "path": "/category/:categoryId/page/:id",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/index.vue",
+    "name": "categories",
+    "_name": "_5d66bec8"
+  },
+  {
+    "path": "*",
+    "component": "/Users/erioikawa/Desktop/microbutter/pages/404.vue",
+    "name": "custom",
+    "_name": "_39113bae"
+  }
+]

@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _39113bae = () => interopDefault(import('../pages/404.vue' /* webpackChunkName: "pages/404" */))
-const _2f4ee95a = () => interopDefault(import('../pages/draft/index.vue' /* webpackChunkName: "pages/draft/index" */))
-const _98a88eb6 = () => interopDefault(import('../pages/search/index.vue' /* webpackChunkName: "pages/search/index" */))
-const _5d66bec8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _73508403 = () => interopDefault(import('../pages/_slug/index.vue' /* webpackChunkName: "pages/_slug/index" */))
+const _73e09fd0 = () => interopDefault(import('../pages/404.vue' /* webpackChunkName: "pages/404" */))
+const _d0dde908 = () => interopDefault(import('../pages/draft/index.vue' /* webpackChunkName: "pages/draft/index" */))
+const _53addac3 = () => interopDefault(import('../pages/search/index.vue' /* webpackChunkName: "pages/search/index" */))
+const _21eda26a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _48dab3b6 = () => interopDefault(import('../pages/_slug/index.vue' /* webpackChunkName: "pages/_slug/index" */))
 
 const emptyFn = () => {}
 
@@ -23,35 +23,35 @@ export const routerOptions = {
 
   routes: [{
     path: "/404",
-    component: _39113bae,
+    component: _73e09fd0,
     name: "404"
   }, {
     path: "/draft",
-    component: _2f4ee95a,
+    component: _d0dde908,
     name: "draft"
   }, {
     path: "/search",
-    component: _98a88eb6,
+    component: _53addac3,
     name: "search"
   }, {
     path: "/",
-    component: _5d66bec8,
+    component: _21eda26a,
     name: "index"
   }, {
     path: "/:slug",
-    component: _73508403,
+    component: _48dab3b6,
     name: "slug"
   }, {
     path: "/page/:id",
-    component: _5d66bec8,
+    component: _21eda26a,
     name: "pages"
   }, {
     path: "/category/:categoryId/page/:id",
-    component: _5d66bec8,
+    component: _21eda26a,
     name: "categories"
   }, {
     path: "*",
-    component: _39113bae,
+    component: _73e09fd0,
     name: "custom"
   }],
 

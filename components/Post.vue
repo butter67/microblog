@@ -53,7 +53,8 @@ export default {
 
     & >>> p {
       line-height: 1.8;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.28em;
+      font-size: 17px;
 
       & > code {
         color: var(--color-pink);

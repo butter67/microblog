@@ -2,58 +2,58 @@
   {
     "name": "404",
     "path": "/404",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/404.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/404.vue",
     "chunkName": "pages/404",
     "url": "/404",
-    "_name": "_39113bae"
+    "_name": "_73e09fd0"
   },
   {
     "name": "draft",
     "path": "/draft",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/draft/index.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/draft/index.vue",
     "chunkName": "pages/draft/index",
     "url": "/draft",
-    "_name": "_2f4ee95a"
+    "_name": "_d0dde908"
   },
   {
     "name": "search",
     "path": "/search",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/search/index.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/search/index.vue",
     "chunkName": "pages/search/index",
     "url": "/search",
-    "_name": "_98a88eb6"
+    "_name": "_53addac3"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/index.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/index.vue",
     "chunkName": "pages/index",
     "url": "/",
-    "_name": "_5d66bec8"
+    "_name": "_21eda26a"
   },
   {
     "name": "slug",
     "path": "/:slug",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/_slug/index.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/_slug/index.vue",
     "chunkName": "pages/_slug/index",
-    "_name": "_73508403"
+    "_name": "_48dab3b6"
   },
   {
     "path": "/page/:id",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/index.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/index.vue",
     "name": "pages",
-    "_name": "_5d66bec8"
+    "_name": "_21eda26a"
   },
   {
     "path": "/category/:categoryId/page/:id",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/index.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/index.vue",
     "name": "categories",
-    "_name": "_5d66bec8"
+    "_name": "_21eda26a"
   },
   {
     "path": "*",
-    "component": "/Users/erioikawa/Desktop/microbutter/pages/404.vue",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/404.vue",
     "name": "custom",
-    "_name": "_39113bae"
+    "_name": "_73e09fd0"
   }
 ]

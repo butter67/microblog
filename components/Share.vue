@@ -3,15 +3,15 @@
     <ul class="shareLists">
       <li class="shareList">
         <a :href="twitterLink" target="_blank" rel="noopener noreferrer">
-          <img src="/images/icon_twitter.svg" alt="Twitter" />
+          <img src="/twitter.png" alt="Twitter" />
         </a>
       </li>
       <li class="shareList">
         <a :href="facebookLink" target="_blank" rel="noopener noreferrer">
-          <img src="/images/icon_facebook.svg" alt="Facebook" />
+          <img src="/facebook.png" alt="Facebook" />
         </a>
       </li>
-      <li class="shareList">
+      <!-- <li class="shareList">
         <a :href="hatenaLink" target="_blank" rel="noopener noreferrer">
           <img src="/images/icon_hatena.svg" alt="はてなブックマーク" />
         </a>
@@ -24,7 +24,7 @@
         >
           <img src="/images/icon_feed.svg" alt="フィード" />
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>
@@ -62,8 +62,9 @@ export default {
     padding-top: 16px;
 
     img {
-      max-width: 24px;
-      max-height: 24px;
+      max-width: 40px;
+      max-height: 40px;
+      border-radius: 100%;
     }
   }
 

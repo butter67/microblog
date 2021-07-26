@@ -2,9 +2,9 @@
   <footer class="footer">
     <ul class="lists">
       <li class="list">
-        <a href="https://wanta.co.jp">運営会社</a>
+        <a href="https://wanta.co.jp">About</a>
       </li>
-      <li class="list">
+      <!-- <li class="list">
         <a href="https://microcms.io/law">特定商取引法に基づく表記</a>
       </li>
       <li class="list">
@@ -14,10 +14,10 @@
         <a href="https://microcms.io/policy">プライバシーポリシー</a>
       </li>
       <li class="list">
-        <a href="https://microcms.io/contact">お問い合わせ</a>
-      </li>
+        <a href="https://microcms.io/contact">お問い合わせ</a> -->
+      <!-- </li> -->
     </ul>
-    <p class="cr">© Wanta Inc.</p>
+    <p class="cr">© Capture.</p>
   </footer>
 </template>
 

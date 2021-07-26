@@ -8,7 +8,7 @@
       </span>
       <span v-if="category" class="category">{{ category.name }}</span>
       <span class="timestamp">
-        <img src="/images/icon_clock.svg" alt />
+        <!-- <img src="/images/icon_clock.svg" alt /> -->
         <time :datetime="$dayjs(createdAt).format('YYYY-MM-DD')">
           {{ $dayjs(createdAt).format('YYYY/MM/DD') }}
         </time>
@@ -41,9 +41,9 @@ export default {
 <style scoped>
 @media (min-width: 600px) {
   .meta {
-    padding: 10px 0 10px;
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
 
   .category {
@@ -64,10 +64,12 @@ export default {
   .timestamp {
     display: inline-flex;
     align-items: center;
-    color: #616269;
-
+    color: white;
     margin-right: 20px;
     white-space: nowrap;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.3em;
 
     img {
       margin-right: 6px;
@@ -122,11 +124,12 @@ export default {
     align-items: center;
     color: #616269;
     white-space: nowrap;
-
-    img {
+    font-weight: 400;
+    letter-spacing: 1em;
+    /* img {
       margin-right: 6px;
       height: 14px;
-    }
+    } */
   }
 }
 </style>

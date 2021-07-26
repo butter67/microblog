@@ -4,9 +4,9 @@
     <div class="divider">
       <article class="article">
         <div class="ttl-wrap">
-          <Breadcrumb :category="category" />
+          <!-- <Breadcrumb :category="category" /> -->
           <h1 class="title">{{ title }}</h1>
-          <Meta
+          <MetaSingle
             :created-at="publishedAt || createdAt"
             :author="writer !== null ? writer.name : ''"
             :category="category"
@@ -42,6 +42,7 @@
             />
           </div>
         </div>
+
         <div class="main">
           <Share :id="id" :title="title" />
           <div class="container">
@@ -55,7 +56,6 @@
             <Post :body="body" />
             <Writer v-if="writer" :writer="writer" />
             <Partner v-if="partner" :partner="partner" />
-            <Conversion :id="id" />
             <RelatedBlogs
               v-if="related_blogs.length > 0"
               :blogs="related_blogs"
@@ -221,6 +221,7 @@ export default {
   .ttl-wrap {
     max-width: 830px;
     margin: 0 auto;
+    padding: 20px 0px;
   }
   .aside {
     width: 300px;
@@ -282,7 +283,7 @@ export default {
   .picwrap::before {
     content: '';
     display: block;
-    padding-top: 66.66%;
+    padding-top: 54%;
   }
 
   .pddimage {
@@ -310,7 +311,7 @@ export default {
       sans-serif;
     display: block;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
     color: #2b2c30;
   }
 }
@@ -404,7 +405,7 @@ export default {
       sans-serif;
     display: block;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
     color: #2b2c30;
   }
 

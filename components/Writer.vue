@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h2 class="title">ABOUT ME</h2>
+    <!-- <h2 class="title">ABOUT ME</h2> -->
     <div class="container">
       <picture v-if="writer.image">
         <source
@@ -16,9 +16,9 @@
       <dl class="content">
         <dt class="name">
           {{ writer.name }}
-          <a class="twitterLink" :href="`https://twitter.com/${writer.id}`">
+          <!-- <a class="twitterLink" :href="`https://twitter.com/${writer.id}`">
             <img class="twitter" src="/images/icon_twitter.svg" alt="Twitter" />
-          </a>
+          </a> -->
         </dt>
         <dd class="text">{{ writer.text }}</dd>
       </dl>

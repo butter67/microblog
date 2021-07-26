@@ -3,7 +3,7 @@
     <header class="header">
       <h1 class="logo">
         <a href="/">
-          <div class="blogttl">Mynorities</div>
+          <div class="blogttl">Capture</div>
         </a>
       </h1>
       <button class="menuBtn" @click="toggleOpen()">
@@ -36,6 +36,8 @@
             >
           </li>
         </ul> -->
+
+        <Categories :categories="categories" />
         <Search />
       </div>
     </header>
@@ -44,7 +46,16 @@
 </template>
 
 <script>
+// import axios from 'axios';
+
 export default {
+  props: {
+    categories: {
+      type: Array,
+      required: true,
+      // default: () => [],
+    },
+  },
   data() {
     return {
       params: this.params || '',
@@ -78,7 +89,6 @@ export default {
     justify-content: space-between;
     padding: 12px 40px;
     z-index: 10;
-    border-bottom: 1px solid var(--color-border);
     background-color: #fff;
   }
   .blogttl {
@@ -91,12 +101,11 @@ export default {
   }
 
   .logo {
-    padding: 8px 0;
-    margin-right: 30px;
+    /* padding: 8px 0;
+    margin-right: 30px; */
 
     a {
       display: block;
-      height: 28px;
     }
   }
 

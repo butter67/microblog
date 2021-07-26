@@ -11,12 +11,14 @@ const components = {
   Latest: () => import('../../components/Latest.vue' /* webpackChunkName: "components/latest" */).then(c => wrapFunctional(c.default || c)),
   Logo: () => import('../../components/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c)),
   Meta: () => import('../../components/Meta.vue' /* webpackChunkName: "components/meta" */).then(c => wrapFunctional(c.default || c)),
+  MetaSingle: () => import('../../components/MetaSingle.vue' /* webpackChunkName: "components/meta-single" */).then(c => wrapFunctional(c.default || c)),
   Partner: () => import('../../components/Partner.vue' /* webpackChunkName: "components/partner" */).then(c => wrapFunctional(c.default || c)),
   PopularArticles: () => import('../../components/PopularArticles.vue' /* webpackChunkName: "components/popular-articles" */).then(c => wrapFunctional(c.default || c)),
   Post: () => import('../../components/Post.vue' /* webpackChunkName: "components/post" */).then(c => wrapFunctional(c.default || c)),
   RelatedBlogs: () => import('../../components/RelatedBlogs.vue' /* webpackChunkName: "components/related-blogs" */).then(c => wrapFunctional(c.default || c)),
   Search: () => import('../../components/Search.vue' /* webpackChunkName: "components/search" */).then(c => wrapFunctional(c.default || c)),
   Share: () => import('../../components/Share.vue' /* webpackChunkName: "components/share" */).then(c => wrapFunctional(c.default || c)),
+  Slider: () => import('../../components/Slider.vue' /* webpackChunkName: "components/slider" */).then(c => wrapFunctional(c.default || c)),
   Toc: () => import('../../components/Toc.vue' /* webpackChunkName: "components/toc" */).then(c => wrapFunctional(c.default || c)),
   Writer: () => import('../../components/Writer.vue' /* webpackChunkName: "components/writer" */).then(c => wrapFunctional(c.default || c))
 }

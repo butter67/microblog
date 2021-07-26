@@ -26,7 +26,7 @@ export default {
 <style scoped>
 @media (min-width: 1160px) {
   .wrapper {
-    padding: 40px 0;
+    padding: 30px 0 40px;
   }
   .flex {
     display: flex;

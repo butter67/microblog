@@ -26,6 +26,9 @@
   "Meta": {
     "description": "Auto imported from components/Meta.vue"
   },
+  "MetaSingle": {
+    "description": "Auto imported from components/MetaSingle.vue"
+  },
   "Partner": {
     "description": "Auto imported from components/Partner.vue"
   },
@@ -43,6 +46,9 @@
   },
   "Share": {
     "description": "Auto imported from components/Share.vue"
+  },
+  "Slider": {
+    "description": "Auto imported from components/Slider.vue"
   },
   "Toc": {
     "description": "Auto imported from components/Toc.vue"

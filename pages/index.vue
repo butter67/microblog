@@ -2,42 +2,44 @@
   <div class="wrapper">
     <Header />
     <div class="divider">
-      <!-- <aside class="bar">
+      <aside class="bar">
         <Categories :categories="categories" />
-      </aside> -->
+      </aside>
       <div class="container">
         <!-- <Breadcrumb :category="selectedCategory" /> -->
         <div v-show="contents.length === 0" class="loader">
-          記事がありません!!
+          記事がありません
         </div>
         <ul class="zigzag">
           <li v-for="content in contents" :key="content.id" class="list">
             <nuxt-link :to="`/${content.id}`" class="link">
-              <div v-if="content.ogimage" class="picture">
-                <!-- <source
+              <div class="for-class">
+                <div v-if="content.ogimage" class="picture">
+                  <!-- <source
                   type="image/webp"
                   :data-srcset="content.ogimage.url + '?w=670&fm=webp'"
                 /> -->
-                <img
-                  :data-src="content.ogimage.url + '?w=670'"
-                  class="ogimage lazyload thum"
-                  alt
-                />
-              </div>
-              <!-- ここ以下がタイトルやカテゴリーの表示 -->
-              <dl class="content">
-                <dt class="title">{{ content.title }}</dt>
-                <dd class="metabox">
-                  <Meta
-                    :author="content.writer !== null ? content.writer.name : ''"
-                    :created-at="content.publishedAt || content.createdAt"
-                    :category="content.category"
+                  <img
+                    :data-src="content.ogimage.url + '?w=670'"
+                    class="ogimage lazyload thum"
+                    alt
                   />
-                </dd>
-              </dl>
-              <!-- ここまで -->
+                </div>
+                <!-- ここ以下がタイトルやカテゴリーの表示 -->
+                <dl class="content mask">
+                  <dt class="title">{{ content.title }}</dt>
+                  <dd class="metabox">
+                    <Meta
+                      :created-at="content.publishedAt || content.createdAt"
+                      :category="content.category"
+                    />
+                  </dd>
+                </dl>
+                <!-- ここまで -->
+              </div>
             </nuxt-link>
           </li>
+          <li class="empty"></li>
         </ul>
         <ul v-show="contents.length > 0" class="pager">
           <li
@@ -58,12 +60,12 @@
           </li>
         </ul>
       </div>
-      <aside class="aside">
+      <!-- <aside class="aside">
         <Banner id="list" :banner="banner" />
         <Search />
-        <!-- <Categories :categories="categories" /> -->
+        <Categories :categories="categories" />
         <PopularArticles :contents="popularArticles" />
-      </aside>
+      </aside> -->
     </div>
     <Footer />
   </div>
@@ -155,6 +157,7 @@ export default {
   .bar {
     display: flex;
     justify-content: center;
+    z-index: 2;
   }
   .pager {
     display: flex;
@@ -167,15 +170,11 @@ export default {
   .page {
     width: 40px;
     height: 40px;
-    background-color: #e5eff9;
-    border-radius: 5px;
     margin: 10px;
 
     &.active {
-      background-color: #3067af;
-
       a {
-        color: #fff;
+        color: #bfa46f;
       }
     }
 
@@ -187,16 +186,18 @@ export default {
       color: #3067af;
     }
   }
+  .page a {
+    color: #9c9072;
+  }
 
   .divider {
-    display: flex;
-    justify-content: space-between;
     width: 1160px;
     margin: 20px auto 0;
   }
 
   .container {
-    width: 855px;
+    width: 100%;
+    position: relative;
   }
 
   .aside {
@@ -251,7 +252,22 @@ export default {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .list:first-child {
+  .zigzag::before {
+    content: '';
+    width: calc(20% - 15px);
+    order: 1;
+    height: 0;
+  }
+  .zigzag::after {
+    content: '';
+    width: calc(20% - 15px);
+    height: 0;
+  }
+  .empty {
+    width: calc(20% - 15px);
+    height: 0;
+  }
+  /* .list:first-child {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -262,9 +278,9 @@ export default {
     content: '';
     display: block;
     padding-top: 38%;
-  }
-  .list:not(:first-child) {
-    width: calc(50% - 15px);
+  } */
+  .list {
+    width: calc(20% - 15px);
     height: 100%;
     object-fit: cover;
     display: inline-block !important;
@@ -272,8 +288,7 @@ export default {
   }
 
   .link {
-    /* display: flex;
-    justify-content: space-between; */
+    position: relative;
   }
 
   .ogimage {
@@ -289,14 +304,15 @@ export default {
   .content {
   }
   .metabox div {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .title {
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 18px;
-    color: #393a3b;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
   }
 }
 @media (min-width: 820px) and (max-width: 1160px) {
@@ -535,12 +551,53 @@ export default {
   display: block;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
 }
 .picture::before {
   content: '';
   display: block;
-  padding-top: 76%;
+  padding-top: 100%;
 }
+
+.for-class:hover .mask {
+  opacity: 1;
+}
+.for-class:hover img {
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
+}
+.for-class img {
+  transition: 1s all;
+}
+.for-class {
+  position: relative;
+  overflow: hidden;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+.mask img {
+  transition: 1s all;
+}
+.mask img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
+}
+
 .thum {
   position: absolute;
   top: 0;

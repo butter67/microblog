@@ -313,6 +313,7 @@ export default {
     color: white;
     text-align: center;
     padding: 0px 20px;
+    letter-spacing: 0.2em;
   }
 }
 @media (min-width: 820px) and (max-width: 1160px) {

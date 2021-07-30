@@ -20,20 +20,19 @@ export default {
       prefix: 'og: http://ogp.me/ns#',
       lang: 'ja',
     },
-    titleTemplate: '%s | microCMSブログ',
+    titleTemplate: '%s | Capture.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content:
-          'microCMSはAPIベースの日本製ヘッドレスCMSです。本ブログはmicroCMSの開発メンバーがmicroCMSの使い方や技術的な内容を発信するブログです。',
+        content: '成長の記録。',
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'microCMSブログ',
+        content: 'Capture.',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -41,12 +40,11 @@ export default {
         property: 'og:url',
         content: 'https://blog.microcms.io',
       },
-      { hid: 'og:title', property: 'og:title', content: 'microCMSブログ' },
+      { hid: 'og:title', property: 'og:title', content: 'Capture.' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content:
-          'microCMSはAPIベースの日本製ヘッドレスCMSです。本ブログはmicroCMSの開発メンバーがmicroCMSの使い方や技術的な内容を発信するブログです。',
+        content: '成長の記録',
       },
       {
         hid: 'og:image',
@@ -316,7 +314,7 @@ export default {
       path: '/feed.xml',
       async create(feed) {
         feed.options = {
-          title: 'microCMSブログ',
+          title: 'Capture.',
           link: 'https://blog.microcms.io/feed.xml',
           description:
             'microCMSはAPIベースの日本製ヘッドレスCMSです。本ブログはmicroCMSの開発メンバーがmicroCMSの使い方や技術的な内容を発信するブログです。',
@@ -347,7 +345,7 @@ export default {
       path: '/feed_update.xml',
       async create(feed) {
         feed.options = {
-          title: '更新情報｜microCMSブログ',
+          title: '更新情報｜Capture.',
           link: 'https://blog.microcms.io/feed.xml',
           description:
             'microCMSはAPIベースの日本製ヘッドレスCMSです。本ブログはmicroCMSの開発メンバーがmicroCMSの使い方や技術的な内容を発信するブログです。',

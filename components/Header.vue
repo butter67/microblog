@@ -36,8 +36,8 @@
             >
           </li>
         </ul> -->
-
-        <Categories :categories="categories" />
+        <!-- 
+        <Categories :categories="categories" /> -->
         <Search />
       </div>
     </header>
@@ -49,13 +49,13 @@
 // import axios from 'axios';
 
 export default {
-  props: {
-    categories: {
-      type: Array,
-      required: true,
-      // default: () => [],
-    },
-  },
+  // props: {
+  //   categories: {
+  //     type: Array,
+  //     required: true,
+
+  //   },
+  // },
   data() {
     return {
       params: this.params || '',

@@ -65,16 +65,10 @@ export default {
     display: inline-flex;
     align-items: center;
     color: white;
-    margin-right: 20px;
     white-space: nowrap;
     font-weight: 400;
     font-size: 13px;
     letter-spacing: 0.3em;
-
-    img {
-      margin-right: 6px;
-      height: 16px;
-    }
   }
 
   .author {
@@ -110,7 +104,6 @@ export default {
     display: inline-flex;
     align-items: center;
     color: #616269;
-    margin-right: 20px;
     white-space: nowrap;
 
     img {

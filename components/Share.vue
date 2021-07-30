@@ -62,8 +62,8 @@ export default {
     padding-top: 16px;
 
     img {
-      max-width: 40px;
-      max-height: 40px;
+      max-width: 50px;
+      max-height: 50px;
       border-radius: 100%;
     }
   }

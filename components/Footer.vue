@@ -2,7 +2,7 @@
   <footer class="footer">
     <ul class="lists">
       <li class="list">
-        <a href="https://wanta.co.jp">About</a>
+        <a href="/about/">About</a>
       </li>
       <!-- <li class="list">
         <a href="https://microcms.io/law">特定商取引法に基づく表記</a>

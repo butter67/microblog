@@ -8,6 +8,14 @@
     "_name": "_73e09fd0"
   },
   {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/erioikawa/Desktop/microblog/pages/about.vue",
+    "chunkName": "pages/about",
+    "url": "/about",
+    "_name": "_0235c7a5"
+  },
+  {
     "name": "draft",
     "path": "/draft",
     "component": "/Users/erioikawa/Desktop/microblog/pages/draft/index.vue",
